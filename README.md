@@ -5,9 +5,10 @@ Raspberry Pi Zero 2 W
 
 Operating System: 32 Bit default "Raspberry PI OS" minimal with no desktop
 
-Folder structure
+### Folder structure
 
-main applications /home/~name~/app/wgt-node
+    main applications /home/~name~/app/wgt-node
+    data location /home/~name~/app/data
 
 ## Setup Activity:
 - Confirmed RPI was updated
