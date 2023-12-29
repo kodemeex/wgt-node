@@ -46,6 +46,7 @@ Make sure there was a virtual enviornment
     - . app/bin/activate  << to activate the virtual enviornment >>
 
 ## Test Flask
+    - from /home/~name~/app
     - in the terminal, type
     - export FLASK_APP=server.py
     - flask run --host=0.0.0.0
