@@ -52,5 +52,5 @@ Make sure there was a virtual enviornment
     - flask run --host=0.0.0.0
 
     - go to a browser and type,
-    - http://~ip address~:5005 << i.e. http://192.168.1.111:5005 or 10.0.0.1:5005 >>
-    - the website response should be "Hello, this is the server!"
+    - http://~ip address~:5000 << i.e. http://192.168.1.111:5000 or 10.0.0.1:5000 >>
+    - the website response should be "Hello, this is a node!"
