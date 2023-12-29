@@ -13,38 +13,43 @@ main applications /home/~name~/app/wgt-node
 - Confirmed RPI was updated
     - sudo app-get update
     - sudo apt-get upgrade
- 
-    - 
+      
 - Established Remote access
     - SSH - On by default from OS setting
 
 ## Setup git folder
-    - from /home/erika/app
-    - git clone "http://github.com/erikashby/rpi1"
+    - from /home/~name~/app
+    - git clone "http://github.com/kodemeex/wgt-node"
 
-    - tested git folder
-    - created this README.md
-    - from /home/erika/app/rpi1
-    - git pull "https://github.com/erikashby/rpi1"
+### Test git folder
 
+    - from /home/~name~/app/wgt-node
+    - git pull "https://github.com/kodemeex/wgt-node"
 
-## Installed Flask
-    - made sure there was a virtual enviornment
-    - from /home/erika/app
-    -   sudo apt install python3-venv  << to install virtual enviornment >>
-    -    python3 -m venv app << to create the virtual enviornment called app>>
-    -   . app/bin/activate  << to activate the virtual enviornment >>
+## Install PIP
+    - in the terminal, type
+    - sudo apt install python3-pip
+    - after installed, reboot the pi.
 
-    - Installed flask
-        pip install Flask
+## Install gpiozero
+    - in the terminal, type
+    - pip install gpiozero
 
-## Installed PIP
+## Install Flask
+Make sure there was a virtual enviornment
 
-## Installed gpiozero
-    . app/bin/activate  << to activate the virtual enviornment >>
-    pip install gpiozero
+    - from /home/~name~/app
+    - in the terminal, type
+    - pip install Flask
+    - sudo apt install python3-venv  << to install virtual enviornment >>
+    - python3 -m venv app << to create the virtual enviornment called app>>
+    - . app/bin/activate  << to activate the virtual enviornment >>
 
-    - Tested flask
-        - added hello.py (see file) and updated raspberry pi
-        - from /home/erika/app/rpi1
-        - flask --app hello run --host=0.0.0.0
+## Test Flask
+    - in the terminal, type
+    - export FLASK_APP=server.py
+    - flask run --host=0.0.0.0
+
+    - go to a browser and type,
+    - http://~ip address~:5005 << i.e. http://192.168.1.111:5005 or 10.0.0.1:5005 >>
+    - the website response should be "Hello, this is the server!"
