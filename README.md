@@ -48,7 +48,7 @@ Make sure there was a virtual enviornment
 ## Test Flask
     - from /home/~name~/app
     - in the terminal, type
-    - export FLASK_APP=server.py
+    - export FLASK_APP=node.py
     - flask run --host=0.0.0.0
 
     - go to a browser and type,
